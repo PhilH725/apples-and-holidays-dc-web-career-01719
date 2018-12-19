@@ -71,7 +71,7 @@ def all_supplies_in_holidays(holiday_hash)
     
     data.each do |holiday, supplies|
       
-      holiday.to_s!
+      holiday.to_s
       if holiday.include?('_')
         semantics = holiday.split('_')
         semantics.each do |i|
