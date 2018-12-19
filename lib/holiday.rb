@@ -75,7 +75,7 @@ def all_supplies_in_holidays(holiday_hash)
         i.capitalize
       end
       semantics.join(' ')
-      puts "  #{holiday}: #{supplies.join(', ')}"
+      puts "  #{semantics}: #{supplies.join(', ')}"
       
     end
     
