@@ -71,6 +71,8 @@ def all_supplies_in_holidays(holiday_hash)
     
     data.each do |holiday, supplies|
       
+      if holiday.include?()
+      
       puts "  #{holiday.capitalize}: #{supplies.join(', ')}"
       
     end
