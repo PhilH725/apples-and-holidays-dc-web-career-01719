@@ -74,7 +74,8 @@ def all_supplies_in_holidays(holiday_hash)
       holiday = holiday.to_s
       if holiday.include?('_')
         semantics = holiday.split('_')
-        semantics.each {|i| i.capitalize!}
+        #semantics.each {|i| i.capitalize!}
+        semantics = [semantics[0].capitalize, semantics[1].capitalize]
         holiday = semantics.join(' ')
       end
       
