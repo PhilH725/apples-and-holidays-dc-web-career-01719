@@ -70,12 +70,8 @@ def all_supplies_in_holidays(holiday_hash)
     puts "#{season.capitalize}:"
     
     data.each do |holiday, supplies|
-      semantics = holiday.split(' ')
-      semantics.each do |i|
-        i.capitalize
-      end
-      semantics.join(' ')
-      puts "  #{semantics}: #{supplies.join(', ')}"
+      
+      puts "  #{holiday.capitalize}: #{supplies.join(', ')}"
       
     end
     
