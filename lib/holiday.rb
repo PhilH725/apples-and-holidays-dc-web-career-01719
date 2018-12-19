@@ -54,10 +54,6 @@ def all_winter_holiday_supplies(holiday_hash)
   
   holiday_hash[:winter].values.flatten
   
-  #holiday_hash[:winter].each do |holiday, supplies|
-   # supplies.values
-  #end
-
 end
 
 def all_supplies_in_holidays(holiday_hash)
@@ -68,6 +64,15 @@ def all_supplies_in_holidays(holiday_hash)
   # Summer:
   #   Fourth Of July: Fireworks, BBQ
   # etc.
+  
+  holiday_hash.each do |season, holiday|
+    puts "#{season}:"
+    season.each do |holiday, supplies|
+      puts "#{holiday}: #{supplies}"
+    end
+  end
+      
+      
 
 end
 
