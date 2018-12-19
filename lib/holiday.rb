@@ -75,7 +75,6 @@ def all_supplies_in_holidays(holiday_hash)
       if holiday.include?('_')
         semantics = holiday.split('_')
         semantics.each {|i| i.capitalize}
-        end
         holiday = semantics.join(' ')
       end
       
