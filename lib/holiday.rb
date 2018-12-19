@@ -78,7 +78,7 @@ def all_supplies_in_holidays(holiday_hash)
         semantics.each do |i|
           maybe += "#{i.capitalize} "
         end
-        holiday = maybe.split
+        holiday = maybe
       else
         holiday = holiday.capitalize
       end
